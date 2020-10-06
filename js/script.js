@@ -5,3 +5,12 @@ $('.slider__inner').slick({
     speed: 1000,
     dots: true
 });
+
+$('.sales__inner').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+});
+
+
