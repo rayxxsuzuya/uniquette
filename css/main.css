@@ -1587,17 +1587,19 @@ body {
   margin-top: 6px;
 }
 
-.slider {
-  margin: 0 auto;
-  max-width: 1400px;
-}
-
 .slider__inner {
   position: relative;
 }
 
+.slider__item {
+  width: 100%;
+}
+
 .slider__image {
   max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .slider .slick-dots {
@@ -1903,6 +1905,14 @@ body {
   flex-grow: 1;
   margin-right: 10px;
   text-align: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.brands .filter__item:hover {
+  text-decoration: none;
+  background-color: gainsboro;
 }
 
 .brands .filter__item:last-child {
@@ -2023,6 +2033,10 @@ body {
   letter-spacing: -0.14px;
 }
 
+.footer__link:hover {
+  color: #fff;
+}
+
 .footer__lin {
   display: block;
 }
@@ -2059,6 +2073,13 @@ body {
   letter-spacing: -0.18px;
   margin-bottom: 24px;
   display: block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__tel:hover {
+  color: #fff;
 }
 
 .footer__span {
@@ -2074,6 +2095,13 @@ body {
 
 .footer__politic {
   text-decoration: underline;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__politic:hover {
+  color: #fff;
 }
 
 .footer__pay-block {
