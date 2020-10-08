@@ -1835,6 +1835,14 @@ body {
   background-image: url(../img/sales-arrow-prev.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sales .slick-prev:hover {
+  -webkit-box-shadow: 0 0 20px rgba(30, 27, 28, 0.32);
+  box-shadow: 0 0 20px rgba(30, 27, 28, 0.32);
 }
 
 .sales .slick-next {
@@ -1852,6 +1860,14 @@ body {
   background-image: url(../img/sales-arrow-next.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sales .slick-next:hover {
+  -webkit-box-shadow: 0 0 20px rgba(30, 27, 28, 0.32);
+  box-shadow: 0 0 20px rgba(30, 27, 28, 0.32);
 }
 
 .brands {
@@ -1917,6 +1933,29 @@ body {
 
 .brands .filter__item:last-child {
   margin-right: 0;
+}
+
+.brands .filter__item.active {
+  background-color: #c2c2c2;
+}
+
+.brands .filter__content {
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.brands .filter__content-wrapper {
+  width: calc(100% / 6);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.brands .filter__content.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .brands-all {
@@ -1996,6 +2035,14 @@ body {
 
 .about__tab:last-child:after {
   display: none;
+}
+
+.about__content {
+  display: none;
+}
+
+.about__content.active {
+  display: block;
 }
 
 .about__name {
